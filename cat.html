@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+<!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+<!-- jQuery library -->
+<script src="js/jquery/dist/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+<style>
+.fa-custom-pos{
+  /*width: 30px;
+  height:30px;*/
+   display: block;
+    text-align: center;
+    color: blue;
+    z-index: -1;
+}
+</style>
+	<style type="text/css">
+		h4{
+			font-family: "Times New Roman";
+			font-style: italic;
+			color: blue;
+			font-weight: bold;
+		}
+		p{
+			font-size: 1em;
+		}
+		
+		#parent{
+			display: table;
+		}
+		#child{
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0px 30px 0px 30px;
+		}
+		a:hover{
+			box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.container:hover{
+				transform: scale(1.009);
+		}
+		.btn{
+				background-color: #aeaec4;
+				/*color: gray;*/
+		}
+		#animated_div{
+				color: black;
+				-webkit-animation:animated_div 5s 1000;
+				-webkit-border-radius:5px;
+		}
+		@keyframes animated_div {
+				0%{
+					transform: rotate(0deg);
+					left:0px;
+				}
+				25%{
+					transform: rotate(20deg);
+					left:0px;
+				}
+				50%{
+					transform: rotate(0deg);
+					left:500px;
+				}
+				55%{
+					transform: rotate(0deg);
+					left:500px;
+				}
+				70%{
+					transform: rotate(0deg);
+					left:500px;
+					
+				}
+				100%{
+					transform: rotate(-360deg);
+					left:0px;
+				}
+		}
+		.img-circle{
+				border-radius: 50%;
+        border: solid 1px black;
+		}	
+	</style>
+</head>
+<body>
+	<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--   <a class="navbar-brand" href="#"> -->
+    <img src="img/logo2.png" width="80" height="60" alt="" style="transform:scale(1.1);">
+  <!-- </a> -->
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="dog.html">Dogs</a>
+          <a class="dropdown-item" href="cat.html">Cats</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dog Essentials
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="dogfood.html">Foods</a>
+          <a class="dropdown-item" href="doggrooming.html">Grooming</a>
+          <a class="dropdown-item" href="trainingdog.html">Training</a>
+           <a class="dropdown-item" href="dogclothes.html">Clothes</a>
+            <a class="dropdown-item" href="accessories1.html">Accessories</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Cat Essentials
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="catfood.html">Foods</a>
+          <a class="dropdown-item" href="catgrooming.html">Grooming</a>
+          <a class="dropdown-item" href="trainingcat.html">Training</a>
+           <a class="dropdown-item" href="catclothes.html">Clothes</a>
+            <a class="dropdown-item" href="accessories2.html">Accessories</a>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+	<!-- /Nav bar -->    
+	
+<div class="container" style="margin-top: 20px; ">
+ 	<div class="row" style="background-color: #f1e8e8;">
+
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4" >
+		<img src="img/img1/persian.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4 >Persian <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		
+   		<p>The Persian is the most popular breed of pedigree cats in the United States.The Persian has a sweet, gentle personality and is a quiet companion.
+		The Persian has a long, flowing coat that must be groomed daily.The Persian is an old breed, but little is known of its history.
+		<a class="btn" href="findmore6.html">Findmore</a><br>
+		   <!-- <a href="video.html"> Click Video</a> --></p>
+	</div>
+
+  </div>
+
+	</div>
+</div>
+
+<div class="container" style="margin-top: 20px; ">
+ 	<div class="row" style="background-color: #f1e8e8;">
+
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/ragdoll.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4 >Ragdoll <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		
+   		<p>The Ragdoll cat can be described in three words: big, beautiful, and friendly. They are lap cats , relatively new breed .He/She has beautiful blue eyes.They are one of the largest cat breeds and quiet kitties.Ragdolls are "DOG-LIKE" cats and it was the world's longest-living "Janus Cat".
+		<a class="btn" href="findmore7.html">Findmore</a><br>
+		   <!-- <a href="video.html"> Click Video</a> --></p>
+	</div>
+
+  </div>
+
+	</div>
+</div>
+
+<div class="container" style="margin-top: 20px; ">
+ 	<div class="row" style="background-color: #f1e8e8;">
+
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/scottishfold.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4 >Scottishfold <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		
+   		<p>Scottish Folds, whether with folded ears or with normal ears, are typically good-natured and placid and adjust to other animals within a household extremely well. They tend to become very attached to their human caregivers and are by nature quite affectionate. Folds also receive high marks for playfulness, grooming and intelligence.
+		<a class="btn" href="findmore8.html">Findmore</a><br>
+		   <!-- <a href="video.html"> Click Video</a> --></p>
+	</div>
+
+  </div>
+
+	</div>
+</div>
+
+<div class="container" style="margin-top: 20px; ">
+ 	<div class="row" style="background-color: #f1e8e8;">
+
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/abyssinian.jpg   " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4 >Abyssinian <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		
+   		<p>Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities. They are said to become depressed without constant activity and the attention of their owners.They have an active, outgoing nature, yet tend to be quiet cats. 
+		<a class="btn" href="findmore9.html">Findmore</a><br>
+		   <!-- <a href="video.html"> Click Video</a> --></p>
+	</div>
+
+  </div>
+
+	</div>
+</div>
+
+<div class="container" style="margin-top: 20px; ">
+ 	<div class="row" style="background-color: #f1e8e8;">
+
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/americanshorthair.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4 >American shorthair <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		
+   		<p>Breeders note that the American Shorthair is the perfect breed for the person who wants a cat that enjoys being in your lap but not in your face. American Shorthairs are known for their quiet voices and adaptable personalities; they are sociable, easily trained, and adapt well to other animals and children.
+		<a class="btn" href="findmore10.html">Findmore</a><br>
+		   <!-- <a href="video.html"> Click Video</a> --></p>
+	</div>
+
+  </div>
+
+	</div>
+</div>
+ <br><br>
+
+<!-- Content of Cat-->
+
+<div class="container1 col-12">
+    <ul class="list-unstyled list-inline row">
+    	<li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center" id="1">
+        <div>
+        	<a href="catgrooming.html">
+        	<img src="img/imag3/catgrooming.jpg" class="img-circle" alt="Picture" width="150" height="150"></a>
+        </div>
+        <p>Grooming</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="catfood.html">
+        	<img src="img/imag3/catfood.jpg" class="img-circle" alt="Picture" width="150" height="150" ></a>
+        </div>
+        <p>Food</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="trainingcat.html">
+        	<img src="img/imag3/cattraining.jpg" class="img-circle" alt="Picture" width="150" height="150"></a>
+        </div>
+        <p>Training</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="catclothes.html">
+        	<img src="img/imag3/catclothes.jpg" class="img-circle" alt="Picture" width="150" height="150"></a>
+        </div>
+        <p>Clothes</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="accessories2.html">
+        	<img src="img/imag3/catacc.jpg" class="img-circle" alt="Picture" width="150" height="150"></a></div>
+        <p>Accessories</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="sale.html">
+        	<img src="img/img3/sale.jpg" class="img-circle" alt="Picture" width="150" height="150"></a></div>
+        <p>Sale</p>
+        </li>
+    </ul>
+</div>	
+
+  <!-- / Content of Cat -->
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-blue pt-4 mt-4">
+  <div id="home-blue-hr">
+  <div class="container">
+    <hr style=" border-top: 10px solid black; border-width: thin;">
+  </div>
+</div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1"> -->
+
+          <!-- Content -->
+          <!-- <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
+            quasi, veritatis totam voluptas nostrum.</p>
+
+        </div> -->
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-2 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-2">About</h5>
+
+          <ul class="list-unstyled">
+            
+            <li>
+              <p>
+                <a href="aboutus.html">ABOUT US</a>
+              </p>
+            </li>
+            
+            
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-2">Address</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-home mr-3"></i>On 73th Btw:33x34, Mandalay</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3"></i> cbm007@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3"></i> + 02 254 38</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-print mr-3"></i> + 02 254 39</p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-2">Follow Us</h5>
+
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb" 
+          href="https://www.facebook.com/cutebabypetshop/?ref=br_tf" target="_blank">
+            <i class="fab fa-facebook-square fa-custom-pos" ></i>
+          </a>
+         
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-1">© 2018 Copyright:
+      <a href="https://www.facebook.com/cutebabypetshop/?ref=br_tf"> CBM.com</a>
+    </div>
+    <!-- Copyright -->
+
+     <div id="home-blue-hr">
+  <div class="container">
+    <hr style=" border-top: 10px solid black; border-width: thin;">
+  </div>
+</div>
+
+  </footer>
+  <!-- Footer -->
+
+	
+
+	
+	
+	
+	
+	
+
+	
+	
+
+</body>
+</html>

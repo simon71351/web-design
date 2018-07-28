@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+<!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+<!-- jQuery library -->
+<script src="js/jquery/dist/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+
+<style>
+.fa-custom-pos{
+  /*width: 30px;
+  height:30px;*/
+   display: block;
+    text-align: center;
+    color: blue;
+    z-index: -1;
+}
+</style>
+  <style type="text/css">
+    .card-img-custom{
+      width: 300px;
+      height: 200px;
+    }
+    img{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="img/logo2.png" width="80" height="60" alt="">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="dog.html">Dogs</a>
+          <a class="dropdown-item" href="cat.html">Cats</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Dog Essentials
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="dogfood.html">Foods</a>
+          <a class="dropdown-item" href="doggrooming.html">Grooming</a>
+          <a class="dropdown-item" href="trainingdog.html">Training</a>
+           <a class="dropdown-item" href="dogclothes.html">Clothes</a>
+            <a class="dropdown-item" href="accessories1.html">Accessories</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Cat Essentials
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="catfood.html">Foods</a>
+          <a class="dropdown-item" href="catgrooming.html">Grooming</a>
+          <a class="dropdown-item" href="trainingcat.html">Training</a>
+           <a class="dropdown-item" href="catclothes.html">Clothes</a>
+            <a class="dropdown-item" href="accessories2.html">Accessories</a>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+  <!-- /Nav bar -->
+<div class="container col-12">
+<div class="row">
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/1.jpg" alt="Card image cap" style="width: 100%; height: 50%;">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo">German Shepherd</button>
+
+    <div class="modal fade" id="demo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/1.jpg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>1 month</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>350000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/2.jpg" alt="Card image cap" style="width: 100%; height: 50%;">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo1">German Shepherd</button>
+
+    <div class="modal fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/2.jpg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo1" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>2 months</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>450000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/3.jpg" alt="Card image cap" style="width: 100%; height: 50%;">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo2">German Shepherd</button>
+
+    <div class="modal fade" id="demo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/3.JPG" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo2" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>4 months</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>650000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/5.jpg" alt="Card image cap" style="width: 100%; height: 50%">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo3">German Shepherd</button>
+
+    <div class="modal fade" id="demo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/5.jpg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo3" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>1 year</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>1500000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/g1.jpg" alt="Card image cap" style="width: 100%; height: 50%">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo5">German Shepherd</button>
+
+    <div class="modal fade" id="demo5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/g1.jpg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo5" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>10 months</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>1200000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/g2.jpg" alt="Card image cap" style="width: 100%; height: 50%">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo6">German Shepherd</button>
+
+    <div class="modal fade" id="demo6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/g2.jpg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo6" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>10 months</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>1200000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/g4.jpeg" alt="Card image cap" style="width: 100%; height: 50%">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo7">German Shepherd</button>
+
+    <div class="modal fade" id="demo7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/g4.jpeg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo7" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>4 months</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>8000000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-3 col-md-6 col-sm-12">
+    <div class="card">
+    <img class="card-img-top card-img-custom" src="img/img3/g3.jpeg" alt="Card image cap" style="width: 100%; height: 50%">
+
+    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#demo8">German Shepherd</button>
+
+    <div class="modal fade" id="demo8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/img3/g3.jpeg" width="200px" style="width:50%">
+          <!-- <div class="card-body"> -->
+       <!-- <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo3">Scottish Fold</button> -->
+      <div id="demo8" >
+        <table style="width: 100%; height: 100%">
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Name:</td>
+            <td>German Shepherd</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Other Names:</td>
+            <td>Alsatian,Alsatian wolf dog</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Origin:</td>
+            <td>Germany</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Life span:</td>
+            <td>10-13 years</td>
+          </tr>
+          <tr style="background-color:  #f1e8e8;">
+            <td class="left">Age:</td>
+            <td>1  year</td>
+          </tr>
+          <tr style="background-color: #dce4eb;">
+            <td class="left">Price:</td>
+            <td>1500000 MMK</td>
+          </tr>
+
+
+        </table>
+    
+    <!-- </div> -->
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+
+  </div>
+
+  <!-- Footer -->
+</div>
+<footer class="page-footer font-small special-color-blue pt-4 mt-4">
+  <div id="home-blue-hr">
+  <div class="container">
+    <hr style=" border-top: 10px solid black; border-width: thin;">
+  </div>
+</div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1"> -->
+
+          <!-- Content -->
+          <!-- <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
+            quasi, veritatis totam voluptas nostrum.</p>
+
+        </div> -->
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-2 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-2">About</h5>
+
+          <ul class="list-unstyled">
+            
+            <li>
+              <p>
+                <a href="aboutus.html">ABOUT US</a>
+              </p>
+            </li>
+            
+            
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-2">Address</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-home mr-3"></i>On 73th Btw:33x34, Mandalay</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3"></i> cbm007@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3"></i> + 02 254 38</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-print mr-3"></i> + 02 254 39</p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-2">Follow Us</h5>
+
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb" 
+          href="https://www.facebook.com/cutebabypetshop/?ref=br_tf" target="_blank">
+            <i class="fab fa-facebook-square fa-custom-pos" ></i>
+          </a>
+         
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-1">© 2018 Copyright:
+      <a href="https://www.facebook.com/cutebabypetshop/?ref=br_tf"> CBM.com</a>
+    </div>
+    <!-- Copyright -->
+
+     <div id="home-blue-hr">
+  <div class="container">
+    <hr style=" border-top: 10px solid black; border-width: thin;">
+  </div>
+</div>
+
+  </footer>
+  <!-- Footer -->
+</body>
+</html>

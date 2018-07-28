@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+<!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+
+<!-- jQuery library -->
+<script src="js/jquery/dist/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+
+
+<style>
+.fa-custom-pos{
+  /*width: 30px;
+  height:30px;*/
+   display: block;
+    text-align: center;
+    color: blue;
+    z-index: -1;
+}
+</style>
+	
+	<style type="text/css">
+		h4{
+			font-family: "Times New Roman";
+			font-style: italic;
+			color: blue;
+			font-weight: bold;
+		}
+		p{
+			font-size: 1em;
+		}
+		
+		#parent{
+			display: table;
+		}
+		#child{
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0px 30px 0px 30px;
+		}
+		a:hover{
+			box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.container:hover{
+				transform: scale(1.009);
+		}
+		.btn{
+				background-color: #aeaec4;
+				/*color: gray;*/
+		}
+		#animated_div{
+				color: black;
+				-webkit-animation:animated_div 5s 1000;
+				-webkit-border-radius:5px;
+		}
+		@keyframes animated_div {
+				0%{
+					transform: rotate(0deg);
+					left:0px;
+				}
+				25%{
+					transform: rotate(20deg);
+					left:0px;
+				}
+				50%{
+					transform: rotate(0deg);
+					left:500px;
+				}
+				55%{
+					transform: rotate(0deg);
+					left:500px;
+				}
+				70%{
+					transform: rotate(0deg);
+					left:500px;
+					
+				}
+				100%{
+					transform: rotate(-360deg);
+					left:0px;
+				}
+		}
+		.img-circle{
+				border-radius: 50%;
+        border: solid 1px black;
+		}	
+	</style>
+
+</head>
+<body>
+	<!-- Nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<!--   <a class="navbar-brand" href="#"> -->
+    <img src="img/logo2.png" width="80" height="60" alt="">
+<!--   </a> -->
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Pets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="dog.html">Dogs</a>
+          <a class="dropdown-item" href="cat.html">Cats</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Dog Essentials
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="dogfood.html">Foods</a>
+          <a class="dropdown-item" href="doggrooming.html">Grooming</a>
+          <a class="dropdown-item" href="trainingdog.html">Training</a>
+           <a class="dropdown-item" href="dogclothes.html">Clothes</a>
+            <a class="dropdown-item" href="accessories1.html">Accessories</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Cat Essentials
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="catfood.html">Foods</a>
+          <a class="dropdown-item" href="catgrooming.html">Grooming</a>
+          <a class="dropdown-item" href="trainingcat.html">Training</a>
+           <a class="dropdown-item" href="catclothes.html">Clothes</a>
+            <a class="dropdown-item" href="accessories2.html">Accessories</a>
+        </div>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+	<!-- /Nav bar -->
+
+	
+<div class="container" style="margin-top: 20px; ">
+ 	<div class="row" style="background-color: #f1e8e8;">
+
+	<div class="col-12 col-sm-12 col-md-6 col-lg-4" >
+    <img src="img/img3/g.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+    <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4 >Golden Retriever <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		
+   		<p>The Golden Retriever is one of the most popular dog breeds in the U.S. The breed’s friendly, tolerant attitude makes him a fabulous family pet, and his intelligence makes him a highly capable working dog. Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out drugs, and as therapy and assistance dogs. They’re also natural athletes, and do well in dog sports such as agility and competitive obedience.
+		<a class="btn" href="findmore1.html">Findmore</a><br>
+		   <!-- <a href="video.html"> Click Video</a> --></p>
+	</div>
+
+  </div>
+
+	</div>
+</div>
+
+	
+<div class="container" style="margin-top: 20px;">
+ 	<div class="row" style="background-color: #f1e8e8;">
+    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/sh.jpg" style=" margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4>Siberian Husky <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
+   		<p>The Siberian Husky is a beautiful dog breed with a thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial masks only add to the appeal of this breed, which originated in Siberia. It is easy to see why many are drawn to the Siberian’s wolf-like looks, but be aware that this athletic, intelligent dog can be independent and challenging for first-time dog owners.
+	    <a class="btn" href="findmore2.html">Findmore</a></p>
+    </div>
+	</div>
+	</div>
+</div>
+
+<div class="container" style="margin-top: 20px;">
+ 	<div class="row" style="background-color: #f1e8e8;">
+    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/lr.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px; display: block; width: 320px; height: 300px;"></div>
+
+    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+	<h4>Labrador Retriever <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
+   		<p>The Labrador Retriever was bred to be both a friendly companion and a useful working dog breed. Historically, he earned his keep as a fisherman’s helper: hauling nets, fetching ropes, and retrieving fish from the chilly North Atlantic. Today’s Labrador Retriever is as good-natured and hard working as his ancestors, and he’s America’s most popular breed. These days the Lab works as a retriever for hunters.
+		<a class="btn" href="findmore3.html">Findmore</a></p>
+	</div>
+	</div>
+    </div>
+</div>
+
+	
+<div class="container" style="margin-top: 20px;">
+	<div class="row" style="background-color: #f1e8e8;">
+    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/gs.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+   		<h4>German Shepherd <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
+   		<p>The German Shepherd Dog is one of America’s most popular dog breeds — for good reason. He’s an intelligent and capable working dog. His devotion and courage are unmatched. And he’s amazingly versatile, excelling at most anything he’s trained to do: guide and assistance work for the handicapped, police and military service, herding, search and rescue, drug detection, competitive obedience and, last but not least, faithful companion.
+   		<a class="btn" href="findmore4.html">Findmore</a></p>
+	</div>
+	</div>
+    </div>
+</div>
+
+	
+<div class="container" style="margin-top: 20px;">
+ 	<div class="row" style="background-color: #f1e8e8;">
+    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/po.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   	<div id="child">
+	<h4>Poodle <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		<p>Elegant. Proud. Clever. Poodles are impressive dogs, as the many best-in-show winners from this dog breed can attest. Behind the blue ribbons, impressive hairdos, and regal attitude, you’ll find an affectionate family dog with an ancient history and many talents.
+		<a class="btn" href="findmore5.html">Findmore</a></p>
+	</div>
+	</div>
+    </div>
+</div>
+  <br><br>
+
+  <!-- Content of Dog -->
+
+<div class="container1 col-12">
+    <ul class="list-unstyled list-inline row">
+    	<li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center" id="1">
+        <div>
+        	<a href="doggrooming.html">
+        	<img src="img/img3/grooming.jpg" class="img-circle" alt="Picture" width="150" height="150"></a>
+        </div>
+        <p>Grooming</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="dogfood.html">
+        	<img src="img/img3/food.jpg" class="img-circle" alt="Picture" width="150" height="150" ></a>
+        </div>
+        <p>Food</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="trainingdog.html">
+        	<img src="img/img3/training1.jpg" class="img-circle" alt="Picture" width="150" height="150"></a>
+        </div>
+        <p>Training</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="dogclothes.html">
+        	<img src="img/img3/clothes.jpg" class="img-circle" alt="Picture" width="150" height="150"></a>
+        </div>
+        <p>Clothes</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="accessories1.html">
+        	<img src="img/img3/accessories.jpg" class="img-circle" alt="Picture" width="150" height="150"></a></div>
+        <p>Accessories</p>
+        </li>
+        <li class="col-12 col-sm-6 col-md-4 col-lg-2 text-center">
+        <div>
+        	<a href="sale.html">
+        	<img src="img/img3/sale.jpg" class="img-circle" alt="Picture" width="150" height="150"></a></div>
+        <p>Sale</p>
+        </li>
+    </ul>
+</div>	
+
+  <!-- / Content of dog -->
+
+
+
+
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-blue pt-4 mt-4">
+  <div id="home-blue-hr">
+  <div class="container">
+    <hr style=" border-top: 10px solid black; border-width: thin;">
+  </div>
+</div>
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+
+      <!-- Grid row -->
+      <div class="row">
+
+        <!-- Grid column -->
+        <!-- <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1"> -->
+
+          <!-- Content -->
+          <!-- <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate esse
+            quasi, veritatis totam voluptas nostrum.</p>
+
+        </div> -->
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-2 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-2">About</h5>
+
+          <ul class="list-unstyled">
+            
+            <li>
+              <p>
+                <a href="aboutus.html">ABOUT US</a>
+              </p>
+            </li>
+            
+            
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-2">Address</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fa fa-home mr-3"></i>On 73th Btw:33x34, Mandalay</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-envelope mr-3"></i> cbm007@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-phone mr-3"></i> + 02 254 38</p>
+            </li>
+            <li>
+              <p>
+                <i class="fa fa-print mr-3"></i> + 02 254 39</p>
+            </li>
+          </ul>
+
+        </div>
+        <!-- Grid column -->
+
+        <hr class="clearfix w-100 d-md-none">
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-2 my-md-4 my-0 mt-1 mb-1">
+
+          <!-- Social buttons -->
+          <h5 class="font-weight-bold text-uppercase mb-2">Follow Us</h5>
+
+          <!-- Facebook -->
+          <a type="button" class="btn-floating btn-fb" 
+          href="https://www.facebook.com/cutebabypetshop/?ref=br_tf" target="_blank">
+            <i class="fab fa-facebook-square fa-custom-pos" ></i>
+          </a>
+         
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-1">© 2018 Copyright:
+      <a href="https://www.facebook.com/cutebabypetshop/?ref=br_tf"> CBM.com</a>
+    </div>
+    <!-- Copyright -->
+
+     <div id="home-blue-hr">
+  <div class="container">
+    <hr style=" border-top: 10px solid black; border-width: thin;">
+  </div>
+</div>
+
+  </footer>
+  <!-- Footer -->
+
+</body>
+</html>
