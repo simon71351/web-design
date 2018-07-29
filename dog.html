@@ -46,16 +46,22 @@
 			display: table;
 		}
 		#child{
-			display: table-cell;
+			display: table;
 			vertical-align: middle;
 			padding: 0px 30px 0px 30px;
 		}
 		a:hover{
 			box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
-		.container:hover{
+		img:hover{
 				transform: scale(1.009);
 		}
+    p:hover{
+      transform: scale(1.009);
+    }
+    h4:hover{
+      transform: scale(1.009);
+    }
 		.btn{
 				background-color: #aeaec4;
 				/*color: gray;*/
@@ -92,6 +98,12 @@
 					left:0px;
 				}
 		}
+    iframe{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
 		.img-circle{
 				border-radius: 50%;
         border: solid 1px black;
@@ -101,10 +113,10 @@
 </head>
 <body>
 	<!-- Nav bar -->
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<!--   <a class="navbar-brand" href="#"> -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!--   <a class="navbar-brand" href="#"> -->
     <img src="img/logo2.png" width="80" height="60" alt="">
-<!--   </a> -->
+  <!--   </a> -->
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -163,19 +175,48 @@
 <div class="container" style="margin-top: 20px; ">
  	<div class="row" style="background-color: #f1e8e8;">
 
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4" >
+	<div class="col-12 col-sm-12 col-md-12 col-lg-4" >
     <img src="img/img3/g.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
-
-    <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+    
+    <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
    		<h4 >Golden Retriever <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
    		
-   		<p>The Golden Retriever is one of the most popular dog breeds in the U.S. The breed’s friendly, tolerant attitude makes him a fabulous family pet, and his intelligence makes him a highly capable working dog. Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out drugs, and as therapy and assistance dogs. They’re also natural athletes, and do well in dog sports such as agility and competitive obedience.
-		<a class="btn" href="findmore1.html">Detail</a><br>
-		   <!-- <a href="video.html"> Click Video</a> --></p>
-	</div>
+   		<p>The Golden Retriever is one of the most popular dog breeds in the U.S. The breed’s friendly, tolerant attitude makes him a fabulous family pet, and his intelligence makes him a highly capable working dog. Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out drugs, and as therapy and assistance dogs. They’re also natural athletes, and do well in dog sports such as agility and competitive obedience. </p>
+     <a class="btn" href="findmore1.html">Buy</a> &nbsp;  
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo1">Findmore About Golden Retriever</a>
 
-  </div>
+      <div class="modal fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Golden Retriever</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo1" >
+        
+           <iframe width="400" height="315" src="https://www.youtube.com/embed/Yo2Vvy86wsc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+		  
+	</div>
+</div>
+ 
 
 	</div>
 </div>
@@ -183,13 +224,45 @@
 	
 <div class="container" style="margin-top: 20px;">
  	<div class="row" style="background-color: #f1e8e8;">
-    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/sh.jpg" style=" margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+<div class="col-sm-12 col-md-12 col-lg-4" >
+  <img src="img/img3/sh.jpg" style=" margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+    <div id="parent" class="col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
    		<h4>Siberian Husky <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
-   		<p>The Siberian Husky is a beautiful dog breed with a thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial masks only add to the appeal of this breed, which originated in Siberia. It is easy to see why many are drawn to the Siberian’s wolf-like looks, but be aware that this athletic, intelligent dog can be independent and challenging for first-time dog owners.
-	    <a class="btn" href="findmore2.html">Findmore</a></p>
+   		<p>The Siberian Husky is a beautiful dog breed with a thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial masks only add to the appeal of this breed, which originated in Siberia. It is easy to see why many are drawn to the Siberian’s wolf-like looks, but be aware that this athletic, intelligent dog can be independent and challenging for first-time dog owners.</p>
+	    <a class="btn" href="findmore2.html">Buy</a>&nbsp;
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo2">Findmore About Siberian Husky</a>
+
+      <div class="modal fade" id="demo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Siberian Husky</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo2" >
+        
+           <iframe width="400" height="315" src="https://www.youtube.com/embed/Yo2Vvy86wsc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen ></iframe>
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+
     </div>
 	</div>
 	</div>
@@ -197,13 +270,46 @@
 
 <div class="container" style="margin-top: 20px;">
  	<div class="row" style="background-color: #f1e8e8;">
-    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/lr.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px; display: block; width: 320px; height: 300px;"></div>
 
-    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+  <div class="col-sm-12 col-md-12 col-lg-4" >
+    <img src="img/img3/lr.jpg" style=" margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;">
+  </div>
+
+    <div id="parent" class="col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
-	<h4>Labrador Retriever <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
-   		<p>The Labrador Retriever was bred to be both a friendly companion and a useful working dog breed. Historically, he earned his keep as a fisherman’s helper: hauling nets, fetching ropes, and retrieving fish from the chilly North Atlantic. Today’s Labrador Retriever is as good-natured and hard working as his ancestors, and he’s America’s most popular breed. These days the Lab works as a retriever for hunters.
-		<a class="btn" href="findmore3.html">Findmore</a></p>
+	   <h4>Labrador Retriever <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
+   		<p>The Labrador Retriever was bred to be both a friendly companion and a useful working dog breed. Historically, he earned his keep as a fisherman’s helper: hauling nets, fetching ropes, and retrieving fish from the chilly North Atlantic. Today’s Labrador Retriever is as good-natured and hard working as his ancestors, and he’s America’s most popular breed. These days the Lab works as a retriever for hunters.</p>
+		  <a class="btn" href="findmore3.html">Buy</a>&nbsp;
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo3">Findmore About LabradorRetriever</a>
+
+      <div class="modal fade" id="demo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Labrador Retriever</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo3" >
+        
+           <iframe  width="400" height="315" src="https://www.youtube.com/embed/pO5HDiHKgj8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+      
 	</div>
 	</div>
     </div>
@@ -212,13 +318,42 @@
 	
 <div class="container" style="margin-top: 20px;">
 	<div class="row" style="background-color: #f1e8e8;">
-    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/gs.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+    <div class="col-sm-12 col-md-12 col-lg-4" ><img src="img/img3/gs.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+    <div id="parent" class="col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
    		<h4>German Shepherd <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i> </h4>
-   		<p>The German Shepherd Dog is one of America’s most popular dog breeds — for good reason. He’s an intelligent and capable working dog. His devotion and courage are unmatched. And he’s amazingly versatile, excelling at most anything he’s trained to do: guide and assistance work for the handicapped, police and military service, herding, search and rescue, drug detection, competitive obedience and, last but not least, faithful companion.
-   		<a class="btn" href="findmore4.html">Findmore</a></p>
+   		<p>The German Shepherd Dog is one of America’s most popular dog breeds — for good reason. He’s an intelligent and capable working dog. His devotion and courage are unmatched. And he’s amazingly versatile, excelling at most anything he’s trained to do: guide and assistance work for the handicapped, police and military service, herding, search and rescue, drug detection, competitive obedience and, last but not least, faithful companion.</p>
+   		<a class="btn" href="findmore4.html">Buy</a>&nbsp;
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo4">Findmore About GermanShepherd</a>
+
+      <div class="modal fade" id="demo4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">German Shepherd</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo4" >
+        
+           <iframe  width="400" height="315" src="https://www.youtube.com/embed/e-ZWvymLrwI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
 	</div>
 	</div>
     </div>
@@ -227,13 +362,44 @@
 	
 <div class="container" style="margin-top: 20px;">
  	<div class="row" style="background-color: #f1e8e8;">
-    <div class="col-sm-12 col-md-6 col-lg-4" ><img src="img/img3/po.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+    <div class="col-sm-12 col-md-12 col-lg-4" ><img src="img/img3/po.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-    <div id="parent" class="col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+    <div id="parent" class="col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
 	<h4>Poodle <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
-   		<p>Elegant. Proud. Clever. Poodles are impressive dogs, as the many best-in-show winners from this dog breed can attest. Behind the blue ribbons, impressive hairdos, and regal attitude, you’ll find an affectionate family dog with an ancient history and many talents.
-		<a class="btn" href="findmore5.html">Findmore</a></p>
+   		<p>Elegant. Proud. Clever. Poodles are impressive dogs, as the many best-in-show winners from this dog breed can attest. Behind the blue ribbons, impressive hairdos, and regal attitude, you’ll find an affectionate family dog with an ancient history and many talents.</p>
+		<a class="btn" href="findmore5.html">Buy</a>&nbsp;
+    <a class="btn " href="#" data-toggle="modal" data-target="#demo4">Findmore About Poodle </a>
+
+      <div class="modal fade" id="demo4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Poodle </h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo4" >
+        
+           <iframe width="400" height="315" src="https://www.youtube.com/embed/iwtkrUTJa2U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+
 	</div>
 	</div>
     </div>

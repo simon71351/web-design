@@ -51,9 +51,15 @@
 		a:hover{
 			box-shadow: 0 10px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
-		.container:hover{
-				transform: scale(1.009);
-		}
+		img:hover{
+        transform: scale(1.009);
+    }
+    p:hover{
+      transform: scale(1.009);
+    }
+    h4:hover{
+      transform: scale(1.009);
+    }
 		.btn{
 				background-color: #aeaec4;
 				/*color: gray;*/
@@ -90,6 +96,12 @@
 					left:0px;
 				}
 		}
+    iframe{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
 		.img-circle{
 				border-radius: 50%;
         border: solid 1px black;
@@ -99,7 +111,7 @@
 <body>
 	<!-- Nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-<!--   <a class="navbar-brand" href="#"> -->
+  <!--   <a class="navbar-brand" href="#"> -->
     <img src="img/logo2.png" width="80" height="60" alt="" style="transform:scale(1.1);">
   <!-- </a> -->
 
@@ -159,17 +171,47 @@
 <div class="container" style="margin-top: 20px; ">
  	<div class="row" style="background-color: #f1e8e8;">
 
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4" >
+	<div class="col-12 col-sm-12 col-md-12 col-lg-4" >
 		<img src="img/img1/persian.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
-   		<h4 >Persian <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		<h4> Persian <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
    		
    		<p>The Persian is the most popular breed of pedigree cats in the United States.The Persian has a sweet, gentle personality and is a quiet companion.
-		The Persian has a long, flowing coat that must be groomed daily.The Persian is an old breed, but little is known of its history.
-		<a class="btn" href="findmore6.html">Findmore</a><br>
-		   <!-- <a href="video.html"> Click Video</a> --></p>
+		The Persian has a long, flowing coat that must be groomed daily.The Persian is an old breed, but little is known of its history.</p>
+    <a class="btn" href="findmore6.html">Buy</a>&nbsp;
+		
+		<a class="btn " href="#" data-toggle="modal" data-target="#demo1">Findmore About Persian</a>
+
+      <div class="modal fade" id="demo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Persian</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo1" >
+        
+           <iframe width="400" height="315" src="https://www.youtube.com/embed/sFaKz2iHg6I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
 	</div>
 
   </div>
@@ -180,15 +222,43 @@
 <div class="container" style="margin-top: 20px; ">
  	<div class="row" style="background-color: #f1e8e8;">
 
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/ragdoll.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+	<div class="col-12 col-sm-12 col-md-12 col-lg-4" ><img src="img/img1/ragdoll.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
-   		<h4 >Ragdoll <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+   		<h4> Ragdoll <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
    		
-   		<p>The Ragdoll cat can be described in three words: big, beautiful, and friendly. They are lap cats , relatively new breed .He/She has beautiful blue eyes.They are one of the largest cat breeds and quiet kitties.Ragdolls are "DOG-LIKE" cats and it was the world's longest-living "Janus Cat".
-		<a class="btn" href="findmore7.html">Findmore</a><br>
-		   <!-- <a href="video.html"> Click Video</a> --></p>
+   		<p>The Ragdoll cat can be described in three words: big, beautiful, and friendly. They are lap cats , relatively new breed .He/She has beautiful blue eyes.They are one of the largest cat breeds and quiet kitties.Ragdolls are "DOG-LIKE" cats and it was the world's longest-living "Janus Cat".</p>
+      <a class="btn" href="findmore7.html">Buy</a>&nbsp;
+		
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo2">Findmore About Ragdoll</a>
+
+      <div class="modal fade" id="demo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Ragdoll</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo2" >
+        
+          <iframe width="400" height="315" src="https://www.youtube.com/embed/rvO0v4rXhJA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
 	</div>
 
   </div>
@@ -196,37 +266,49 @@
 	</div>
 </div>
 
-<div class="container" style="margin-top: 20px; ">
- 	<div class="row" style="background-color: #f1e8e8;">
 
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/scottishfold.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
-
-   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
-   	<div id="child">
-   		<h4 >Scottishfold <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
-   		
-   		<p>Scottish Folds, whether with folded ears or with normal ears, are typically good-natured and placid and adjust to other animals within a household extremely well. They tend to become very attached to their human caregivers and are by nature quite affectionate. Folds also receive high marks for playfulness, grooming and intelligence.
-		<a class="btn" href="findmore8.html">Findmore</a><br>
-		   <!-- <a href="video.html"> Click Video</a> --></p>
-	</div>
-
-  </div>
-
-	</div>
-</div>
 
 <div class="container" style="margin-top: 20px; ">
  	<div class="row" style="background-color: #f1e8e8;">
 
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/abyssinian.jpg   " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+	<div class="col-12 col-sm-12 col-md-12 col-lg-4" ><img src="img/img1/abyssinian.jpg   " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
+   <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
    	<div id="child">
    		<h4 >Abyssinian <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
    		
-   		<p>Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities. They are said to become depressed without constant activity and the attention of their owners.They have an active, outgoing nature, yet tend to be quiet cats. 
-		<a class="btn" href="findmore9.html">Findmore</a><br>
-		   <!-- <a href="video.html"> Click Video</a> --></p>
+   		<p>Abyssinians are a popular breed thanks in large part to their unusual intelligence and generally extroverted, playful, willful personalities. They are said to become depressed without constant activity and the attention of their owners.They have an active, outgoing nature, yet tend to be quiet cats.</p> 
+      <a class="btn" href="findmore8.html">Buy</a>&nbsp;
+		
+		  <a class="btn " href="#" data-toggle="modal" data-target="#demo3">Findmore About Abyssinian</a>
+
+      <div class="modal fade" id="demo3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Abyssinian</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo3" >
+        
+           <iframe width="400" height="315" src="https://www.youtube.com/embed/EY6ZgtaEIiU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
 	</div>
 
   </div>
@@ -235,23 +317,103 @@
 </div>
 
 <div class="container" style="margin-top: 20px; ">
- 	<div class="row" style="background-color: #f1e8e8;">
+  <div class="row" style="background-color: #f1e8e8;">
 
-	<div class="col-12 col-sm-12 col-md-6 col-lg-4" ><img src="img/img1/americanshorthair.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+  <div class="col-12 col-sm-12 col-md-12 col-lg-4" ><img src="img/img1/scottishfold.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
 
-   <div id="parent" class="col-12 col-sm-12 col-md-6 col-lg-8" style="height: 300px; text-align: justify;">
-   	<div id="child">
-   		<h4 >American shorthair <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
-   		
-   		<p>Breeders note that the American Shorthair is the perfect breed for the person who wants a cat that enjoys being in your lap but not in your face. American Shorthairs are known for their quiet voices and adaptable personalities; they are sociable, easily trained, and adapt well to other animals and children.
-		<a class="btn" href="findmore10.html">Findmore</a><br>
-		   <!-- <a href="video.html"> Click Video</a> --></p>
-	</div>
+   <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
+    <div id="child">
+      <h4 >Scottishfold <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+      
+      <p>Scottish Folds, whether with folded ears or with normal ears, are typically good-natured and placid and adjust to other animals within a household extremely well. They tend to become very attached to their human caregivers and are by nature quite affectionate. Folds also receive high marks for playfulness, grooming and intelligence.</p>
+      <a class="btn" href="findmore9.html">Buy</a>&nbsp;
+    
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo4">Findmore About Scottishfold</a>
+
+      <div class="modal fade" id="demo4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Scottishfold</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo4" >
+        
+           <iframe width="400" height="315" src="https://www.youtube.com/embed/25l6gh8NgxU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
 
   </div>
 
-	</div>
+  </div>
 </div>
+
+
+    
+<div class="container" style="margin-top: 20px; ">
+  <div class="row" style="background-color: #f1e8e8;">
+
+  <div class="col-12 col-sm-12 col-md-12 col-lg-4" ><img src="img/img1/americanshorthair.jpg  " style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
+
+   <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
+    <div id="child">
+      <h4 >AmericanShorthair<br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
+      
+      <p>Breeders note that the American Shorthair is the perfect breed for the person who wants a cat that enjoys being in your lap but not in your face. American Shorthairs are known for their quiet voices and adaptable personalities; they are sociable, easily trained, and adapt well to other animals and children.</p>
+      <a class="btn" href="findmore10.html">Buy</a>&nbsp;
+    
+      <a class="btn " href="#" data-toggle="modal" data-target="#demo5">Findmore About shorthair</a>
+
+      <div class="modal fade" id="demo5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">American shorthair</h5><br>
+        
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <div id="demo5" >
+        
+           <iframe  width="400" height="315" src="https://www.youtube.com/embed/ahSUiMzJIJ8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      </div>
+    <!-- </div> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  </div>
+
+  </div>
+</div>
+
  <br><br>
 
 <!-- Content of Cat-->
@@ -315,7 +477,7 @@
   <div class="container">
     <hr style=" border-top: 10px solid black; border-width: thin;">
   </div>
-</div>
+  </div>
 
     <!-- Footer Links -->
     <div class="container text-center">
@@ -421,21 +583,8 @@
   <div class="container">
     <hr style=" border-top: 10px solid black; border-width: thin;">
   </div>
-</div>
-
-  </footer>
+  </div>
+</footer>
   <!-- Footer -->
-
-	
-
-	
-	
-	
-	
-	
-
-	
-	
-
 </body>
 </html>
