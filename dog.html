@@ -46,7 +46,7 @@
 			display: table;
 		}
 		#child{
-			display: table;
+			display: table-cell;
 			vertical-align: middle;
 			padding: 0px 30px 0px 30px;
 		}
@@ -108,6 +108,12 @@
 				border-radius: 50%;
         border: solid 1px black;
 		}	
+    .vertical-center
+{
+display: table-cell;
+float: none;
+vertical-align: middle;
+}
 	</style>
 
 </head>
@@ -178,11 +184,11 @@
 	<div class="col-12 col-sm-12 col-md-12 col-lg-4" >
     <img src="img/img3/g.jpg" style="margin-left: auto; margin-right: auto; margin-top: 13px; margin-bottom: 13px;  display: block; width: 320px; height: 300px;"></div>
     
-    <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8" style="height: 300px; text-align: justify;">
+    <div id="parent" class="col-12 col-sm-12 col-md-12 col-lg-8 " style=" height: 300px; text-align: justify; ">
    	<div id="child">
    		<h4 >Golden Retriever <br><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i><i id="animated_div" class="fa fa-paw"></i></h4>
    		
-   		<p>The Golden Retriever is one of the most popular dog breeds in the U.S. The breed’s friendly, tolerant attitude makes him a fabulous family pet, and his intelligence makes him a highly capable working dog. Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out drugs, and as therapy and assistance dogs. They’re also natural athletes, and do well in dog sports such as agility and competitive obedience. </p>
+   		<p >The Golden Retriever is one of the most popular dog breeds in the U.S. The breed’s friendly, tolerant attitude makes him a fabulous family pet, and his intelligence makes him a highly capable working dog. Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out drugs, and as therapy and assistance dogs. They’re also natural athletes, and do well in dog sports such as agility and competitive obedience. </p>
      <a class="btn" href="findmore1.html">Buy</a> &nbsp;  
       <a class="btn " href="#" data-toggle="modal" data-target="#demo1">Findmore About Golden Retriever</a>
 
@@ -465,7 +471,7 @@
   <div class="container">
     <hr style=" border-top: 10px solid black; border-width: thin;">
   </div>
-</div>
+  </div>
 
     <!-- Footer Links -->
     <div class="container text-center">
@@ -571,9 +577,8 @@
   <div class="container">
     <hr style=" border-top: 10px solid black; border-width: thin;">
   </div>
-</div>
-
-  </footer>
+  </div>
+</footer>
   <!-- Footer -->
 
 </body>
